@@ -1,0 +1,20 @@
+version: 3
+
+services:
+  web:
+    build: ./web
+
+  api:
+    build: ./api
+
+  router:
+    build: ./router
+
+  engine:
+    build: ./engine
+
+  database:
+    image: postgres:alpine
+
+  redis:
+    image: redis:alpine
